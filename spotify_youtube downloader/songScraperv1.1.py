@@ -42,8 +42,8 @@ def get_youtube_url(api_key, search_query, max_results=1):
         return None
 
 # Set up credentials
-client_id = '41a21391e2484687b3e0f6a2060f6174'
-client_secret = 'edf40ec8efc04e468be3c1535b6560e9'
+client_id = 'Enter CLIENT ID'
+client_secret = 'ENTER CLIENT SECRET'
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
@@ -97,7 +97,7 @@ def MP4ToMP3(video_path,output_audio_path):
     video.audio.write_audiofile(output_audio_path, codec="mp3")
 
 
-spotify_api_key = 'AIzaSyC02zD4tm3FGlZ-7bLTcUyM1gWjsabVd4Y'
+spotify_api_key = 'ENTER SPOTIFY API KEY'
 playlist_number=0
 songs= returnSongsInPlaylist("sacb1q95pwg6ustbb157bspod", playlist_number)
 playlist_title=playlists['items'][playlist_number]['name']
