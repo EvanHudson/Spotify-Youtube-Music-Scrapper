@@ -25,7 +25,6 @@ for playlist in playlists['items']:
     show_tracks(tracks)
 """
 def readEncodedData(user_id):
-    # Replace 'sacb1q95pwg6ustbb157bspod' with your Spotify USER ID
     user_id = user_id
     encoded_Data=[]
     # Check if there are playlists
